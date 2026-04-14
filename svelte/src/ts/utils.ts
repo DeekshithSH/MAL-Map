@@ -13,7 +13,7 @@ export function nativeTitle(metadata: ANIME_DATA) {
 
 
 export async function queryUser(username: string): Promise<number[]> {
-    const proxy_url = 'https://corsanywhere.herokuapp.com/';
+    const proxy_url = 'https://corx.venipa.workers.dev/?url=';
     const mal_url = `https://api.myanimelist.net/v2/users/${username}/animelist`;
     const full_url = `${proxy_url}${mal_url}?` + new URLSearchParams({
         'limit': '1000',
